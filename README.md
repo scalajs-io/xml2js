@@ -2,7 +2,7 @@ Xml2js API for Scala.js
 ================================
 This is a Scala.js type-safe binding for [xml2js](https://www.npmjs.com/package/xml2js)
 
-A xml2js library for NodeJS.
+Simple XML to JavaScript object converter.
 
 #### Build Dependencies
 
