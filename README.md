@@ -1,21 +1,25 @@
 Xml2js API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [xml2js](https://www.npmjs.com/package/xml2js)
+[xml2js](https://www.npmjs.com/package/xml2js) - Simple XML to JavaScript object converter.
 
-Simple XML to JavaScript object converter.
+### Description
 
-#### Build Dependencies
+Simple XML to JavaScript object converter. It supports bi-directional conversion. Uses sax-js and xmlbuilder-js.
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+Note: If you're looking for a full DOM parser, you probably want [JSDom](https://github.com/scalajs-io/jsdom).
+
+### Build Dependencies
+
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -29,7 +33,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
 import io.scalajs.JSON
@@ -48,7 +52,7 @@ trait MyObject extends js.Object {
 }
 ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
 To add the `Xml2js` binding to your project, add the following to your build.sbt:  
 
