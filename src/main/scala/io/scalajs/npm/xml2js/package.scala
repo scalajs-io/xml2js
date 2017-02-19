@@ -1,7 +1,7 @@
 package io.scalajs.npm
 
 import io.scalajs.nodejs.Error
-import io.scalajs.util.ScalaJsHelper._
+import io.scalajs.util.PromiseHelper._
 
 import scala.concurrent.Promise
 import scala.scalajs.js
@@ -20,7 +20,7 @@ package object xml2js {
 
     @inline
     def parseStringFuture[T <: js.Any](xml: String): Promise[T] = {
-      futureCallbackE1[Error, T](xml2js.parseString[T](xml, _))
+      promiseWithError1[Error, T](xml2js.parseString[T](xml, _))
     }
 
   }
