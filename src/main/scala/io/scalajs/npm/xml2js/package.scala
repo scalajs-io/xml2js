@@ -3,7 +3,7 @@ package io.scalajs.npm
 import io.scalajs.nodejs.Error
 import io.scalajs.util.PromiseHelper._
 
-import scala.concurrent.Promise
+import scala.concurrent.Future
 import scala.scalajs.js
 
 /**
@@ -19,7 +19,7 @@ package object xml2js {
   implicit class XML2JSEnrichment(val xml2js: Xml2js) extends AnyVal {
 
     @inline
-    def parseStringFuture[T <: js.Any](xml: String): Promise[T] = {
+    def parseStringFuture[T <: js.Any](xml: String): Future[T] = {
       promiseWithError1[Error, T](xml2js.parseString[T](xml, _))
     }
 
