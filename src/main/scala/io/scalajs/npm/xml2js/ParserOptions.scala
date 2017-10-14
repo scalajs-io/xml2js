@@ -1,7 +1,6 @@
 package io.scalajs.npm.xml2js
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
 
 /**
   * NodeJS/xml2js Parser Options
@@ -45,7 +44,6 @@ import scala.scalajs.js.annotation.ScalaJSDefined
   *                              Array of functions with following signature
   * @author lawrence.daniels@gmail.com
   */
-@ScalaJSDefined
 class ParserOptions(var attrkey: js.UndefOr[String] = js.undefined,
                     var charkey: js.UndefOr[String] = js.undefined,
                     var explicitCharkey: js.UndefOr[Boolean] = js.undefined,

@@ -1,7 +1,6 @@
 package io.scalajs.npm.xml2js
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
 
 /**
   * NodeJS/xml2js Builder Options
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.ScalaJSDefined
   *                            Does not add {{{<![CDATA[ ... ]]>}}} if it is not required. Added in 0.4.5.
   * @author lawrence.daniels@gmail.com
   */
-@ScalaJSDefined
 class BuilderOptions(var rootName: js.UndefOr[String] = js.undefined,
                      var renderOpts: js.UndefOr[RenderOptions] = js.undefined,
                      var indent: js.UndefOr[String] = js.undefined,
